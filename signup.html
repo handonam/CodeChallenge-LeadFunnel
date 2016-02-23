@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+
+  <!-- styles -->
+  <!-- Provided by prompt -->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css" rel="stylesheet">
+
+  <!-- From the applicant -->
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/blocks/heading.css" rel="stylesheet">
+  <link href="css/blocks/offer.css" rel="stylesheet">
+  <link href="css/blocks/form.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+  <div id="signup">
+    <div id="selected-product"></div>
+
+    <header class="Header">
+      <h1 class="Header__Heading">Most samples are available for a limited time only!</h1>
+      <h2 class="Header__Subheading">Sign up to redeem while supplies last</h2>
+    </header>
+
+    <section>
+      <div class="col-md-2"></div>
+      <form id="signupForm" class="js-Form Form col-md-4">
+        <label class="Form__Label Form__Label--Name">
+          <input type="text" class="Form__Input js-first"
+            placeholder="First Name" name="firstName"/>
+          <span class="Form__Error js-first__error"></span>
+        </label>
+
+        <label class="Form__Label Form__Label--Name">
+          <input type="text" class="Form__Input  js-last"
+            placeholder="Last Name" name="lastName"/>
+          <span class="Form__Error js-last__error"></span>
+        </label>
+
+        <label class="Form__Label Form__Label--Email">
+          <input type="email" class="Form__Input js-email"
+            placeholder="Email" name="email"/>
+          <span class="Form__Error js-email__error"></span>
+        </label>
+
+        <label class="Form__Label Form__Label--Phone">
+          <input type="tel" class="Form__Input  js-phone"
+            placeholder="Phone Number" name="phone"/>
+          <span class="Form__Error js-phone__error"></span>
+        </label>
+
+        <label class="Form__Label Form__Label--Address">
+          <input type="text" class="Form__Input  js-address"
+            placeholder="Street Address" name="street"/>
+          <span class="Form__Error js-address__error"></span>
+        </label>
+
+        <label class="Form__Label Form__Label--City">
+          <input type="text" class="Form__Input js-city"
+            placeholder="City" name="city"/>
+          <span class="Form__Error js-city__error"></span>
+        </label>
+
+        <label class="Form__Label Form__Label--State">
+          <input type="text" class="Form__Input  js-state"
+            placeholder="State" name="state"/>
+          <span class="Form__Error js-state__error"></span>
+        </label>
+
+        <label class="Form__Label Form__Label--Zip">
+          <input type="number" class="Form__Input js-zip"
+            placeholder="Zip" name="zip"/>
+          <span class="Form__Error js-zip__error"></span>
+        </label>
+
+        <button class="btn btn-success js-submit" type="submit">submit</button>
+        <a href="index.html" class="Form__Cancel">Back</a>
+      </form>
+
+      <div class="Offer__Container col-md-4 js-offer "></div>
+      <div class="col-md-4"></div>
+    </section>
+
+  </div>
+  <!-- scripts -->
+  <!-- Provided by prompt -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+  <!-- From the applicant -->
+  <script type="text/html" id="offer_tmpl">
+    <div class="Offer__Content">
+      <h4 class="Offer__Heading"><%= title %></h4>
+      <img class="Offer__Image" src="<%= image %>">
+    </div>
+  </script>
+  <script src="js/constants.js"></script>
+  <script src="js/util/js.cookie.js"></script>
+  <script src="js/util/microtemplate.js"></script>
+  <script src="js/pages/signup.js"></script>
+</body>
+</html>

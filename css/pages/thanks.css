@@ -1,0 +1,9 @@
+.Thanks {
+  background: #fff;
+  padding: 25px;
+}
+
+.UserInfo {
+  font-family: monospace;
+  overflow: auto;
+}

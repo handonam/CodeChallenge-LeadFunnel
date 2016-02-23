@@ -1,0 +1,80 @@
+.Offer__Container {
+  margin-bottom: 10px;
+}
+
+.Offer__Content {
+  background-color: #FFF;
+  color: #333;
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 15px 2.5%;
+  position: relative;
+  transition: all .5s;
+}
+
+.Offer__Container:hover .Offer__Content {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
+}
+
+
+.Offer__CTA {
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.Offer__Image {
+  margin-bottom: 15px;
+}
+
+
+.Offer__Tag {
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, .5);
+  color: #fff;
+  font-weight: bold;
+  padding: 2px 5px;
+  position: absolute;
+  top: -5px;
+}
+
+.Offer__Tag--Type {
+  background: #0A0;
+  left: 0px;
+  transform-origin: 0 0%;
+  -webkit-transform-origin: 0 0%;
+  -moz-transform-origin: 0 0%;
+  -ms-transform-origin: 0 0%;
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+}
+
+.Offer__Tag--EditorPick {
+  background: #EEC700;
+  right: 0;
+}
+
+.Offer__Container:hover .Offer__Tag--Type {
+  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+}
+
+.Offer__Tag--Type--Freebie {
+  background: #0F0;
+}
+
+.Offer__Tag--Type--Coupon {
+  background: #F00;
+}
+
+.Offer__Tag--Type--Deal {
+  background: #00F;
+}
+
+.Offer__Tag--Type--Sweepstakes {
+  background: #FF0;
+}

@@ -1,0 +1,27 @@
+.Header {
+  text-align: center;
+}
+
+.Header__Heading {
+  background: #2e2e2e;
+  color: #fff;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.Header__Subheading {
+  background: #8ec0c2 0 -85px repeat-x;
+  color: #fff;
+  margin-top: 0;
+  padding: 20px 0;
+  margin-bottom: 50px;
+}
+
+  @media only screen and (max-width: 480px) {
+    .Header__Heading {
+      font-size: 2rem;
+    }
+    .Header__Subheading {
+      font-size: 1.5rem;
+    }
+  }

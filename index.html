@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+
+  <!-- styles -->
+  <!-- Provided by prompt -->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css" rel="stylesheet">
+
+  <!-- From the applicant -->
+  <link href="css/common.css" rel="stylesheet">
+  <link href="css/blocks/heading.css" rel="stylesheet">
+  <link href="css/blocks/offer.css" rel="stylesheet">
+  <link href="css/pages/index.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+  <div id="landing-page">
+    <header class="Header">
+      <h1 class="Header__Heading">Check out these free samples!</h1>
+      <h2 class="Header__Subheading">Select a sample below</h2>
+    </header>
+
+    <div id="gif-results" class="js-results Offer">
+
+    </div>
+  </div>
+
+  <!-- scripts -->
+  <!-- Provided by prompt -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+  <!-- From the applicant -->
+  <!-- This is the microtemplate I will use to display each result -->
+  <script type="text/html" id="result_tmpl">
+    <div class="Offer__Container col-md-3">
+      <div class="Offer__Content">
+        <span class="Offer__Tag Offer__Tag--Type Offer__Tag--Type--<%= type %>"><%= type %></span>
+        <% if (editorsPick) { %>
+          <span class="Offer__Tag Offer__Tag--EditorPick">Editor's Pick!</span>
+        <% } %>
+        <h4 class="Offer__Heading"><%= title %></h4>
+        <img class="Offer__Image" src="<%= image %>">
+        <a href="signup.html" class="js-CTA Offer__CTA btn btn-success">Get this offer!</a>
+        <p class="Offer__Description">
+          <%= desc %>
+        </p>
+      </div>
+    </div>
+  </script>
+  <script src="js/constants.js"></script>
+  <script src="js/util/js.cookie.js"></script>
+  <script src="js/util/microtemplate.js"></script>
+  <script src="js/pages/index.js"></script>
+</body>
+</html>

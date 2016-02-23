@@ -1,0 +1,62 @@
+.Form {
+  margin-bottom: 15px;
+}
+
+.Form__Label {
+  width: 100%;
+  display: block;
+}
+
+.Form__Input {
+  border: 1px solid #999;
+}
+.Form__Input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.Form__Input--Error,
+.Form__Error {
+  color: #F00;
+}
+.Form__Error {
+  display: block;
+  font-size: .98rem;
+}
+
+.Form__Input--Error {
+  border-color: #F00;
+}
+
+.Form__Label {
+  margin-bottom: 5px;
+}
+
+.Form__Label--Email .Form__Input,
+.Form__Label--Phone .Form__Input,
+.Form__Label--Address .Form__Input {
+  width: 250px;
+}
+
+.Form__Label--City,
+.Form__Label--State {
+  display: inline-block;
+}
+
+.Form__Label--City .Form__Input,
+.Form__Label--State .Form__Input{
+  width: 100%;
+}
+.Form__Label--City {
+  width: 140px
+}
+.Form__Label--State {
+  width: 110px;
+}
+
+.Form__Label--Zip .Form__Input {
+  width: 100px;
+}
+
+.Form__Cancel {
+  margin-left: 25px;
+}
